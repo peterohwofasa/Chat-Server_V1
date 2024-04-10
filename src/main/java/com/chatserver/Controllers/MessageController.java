@@ -29,6 +29,12 @@ public class MessageController {
         return messageService.getMessages();
     }
 
+    @DeleteMapping("/{id}")
+    public String deleteMessage(@PathVariable Long id) {
+        messageService.deleteMessage(id);
+        return "Message deleted successfully";
+    }
+
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
@@ -37,6 +43,5 @@ public class MessageController {
         private String sender;
         private String content;
 
-        // Getters and setters
     }
 }

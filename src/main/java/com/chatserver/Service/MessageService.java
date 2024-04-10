@@ -24,4 +24,8 @@ public class MessageService {
     public List<Message> getMessages() {
         return messageRepository.findAll();
     }
+
+    public void deleteMessage(Long id) {
+        messageRepository.deleteById(id);
+    }
 }
