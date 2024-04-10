@@ -35,7 +35,7 @@ Server Scalability: Ability to scale the server to handle increased traffic.
 Installation
 
 Clone the repository:
-"git clone https://github.com/''/chat-server.git"
+"https://github.com/peterohwofasa/Chat-Server_V1.git"
 
 Navigate to the project directory:
 
